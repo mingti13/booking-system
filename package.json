@@ -1,0 +1,28 @@
+{
+  "name": "booking-system-webapp",
+  "version": "1.0.0",
+  "description": "Full-stack booking and inventory management system with POS interface",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "docker compose up",
+    "build": "docker compose build",
+    "stop": "docker compose down",
+    "logs": "docker compose logs -f",
+    "db:reset": "bash scripts/reset-db.sh",
+    "db:backup": "bash scripts/backup-db.sh"
+  },
+  "keywords": [
+    "booking",
+    "pos",
+    "inventory",
+    "express",
+    "react",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "MIT"
+}
